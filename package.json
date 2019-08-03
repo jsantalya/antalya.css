@@ -1,0 +1,10 @@
+{
+  "name": "antalya.css",
+  "version": "0.1.0",
+  "main": "antalya.css",
+  "repository": "git@github.com:jsantalya/antalya.css.git",
+  "contributors": [
+    "Mehmet Kose <mehmetkosedev@gmail.com> (https://mehmetkose.com.tr)"
+  ],
+  "license": "MIT"
+}
