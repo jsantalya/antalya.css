@@ -1,0 +1,23 @@
+{
+  "name": "antalya.css",
+  "homepage": "https://github.com/jsantalya/antalya.css",
+  "authors": [
+    "Mehmet Kose mehmetkosedev@gmail.com"
+  ],
+  "description": "1kb micro css framework",
+  "main": "antalya.css",
+  "keywords": [
+    "ui",
+    "framework",
+    "antalya",
+    "micro"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
