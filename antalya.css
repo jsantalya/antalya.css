@@ -16,3 +16,65 @@ th, td
 
 img, iframe { border: 0 }
 
+/* Hamburger Menu */
+
+details {
+    max-width: 12rem;
+    position: relative;
+    position: fixed;
+    top: 0.67rem;
+    right: 0.67rem;
+  }
+
+  summary {
+    visibility: hidden;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    visibility: visible;
+    content: "";
+  }
+
+  summary::after {
+    visibility: visible;
+    content: "☰";
+    z-index: 11111;
+    position: relative;
+    left: 0.25rem;
+    font-size: 1.7rem;
+  }
+
+  details[open] summary::after {
+    content: "×";
+    font-size: 2em;
+    z-index: 22222;
+  }
+
+  details[open] summary::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  details ul {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    background-color: #f7f8fc;
+    text-align: center;
+    font-size: 2rem;
+  }
