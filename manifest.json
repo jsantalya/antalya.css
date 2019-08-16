@@ -1,0 +1,19 @@
+{
+  "name": "Antalya.css",
+  "short_name": "Antalya.css",
+  "display": "standalone",
+  "background_color": "#2c69d8",
+  "theme_color": "#2c69d8",
+  "start_url": "/",
+  "description": "1kb css micro framework",
+  "icons": [{
+    "src": "https://aso.dog/icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "developer": {
+    "name": "Mehmet KOSE",
+    "url": "https://mehmetkose.github.io"
+  },
+  "default_locale": "en"
+}
