@@ -1,6 +1,7 @@
 {
   "name": "Antalya.css",
   "short_name": "Antalya.css",
+  "version": "v0.2.0",
   "display": "standalone",
   "background_color": "#2c69d8",
   "theme_color": "#2c69d8",
