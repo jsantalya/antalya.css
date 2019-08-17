@@ -1,8 +1,14 @@
 # Changelog
 
+### v0.2.0
+
+- added hamburger menu
+
 ### v0.1.1
-- init home page that uses antalya.css
+
+- added home page that serves as demo
 
 ### v0.1.0
+
 - init project file
-- init bower 
+- init bower
