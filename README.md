@@ -1,4 +1,4 @@
-# antalya.css v0.4.0
+# antalya.css v0.4.2
 
 > 1kb micro css framework for bootstrapping
 
