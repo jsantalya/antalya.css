@@ -22,6 +22,14 @@
     <link href="/manifest.json" rel="manifest" />
     <link rel="canonical" href="https://antalya.js.org/antalya.css/" />
     <link href="./antalya.css" rel="stylesheet" />
+    <style>
+      xmp {
+        width: 100%;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: justify;
+      }
+    </style>
   </head>
 
   <body>
@@ -65,19 +73,37 @@
 
     <section>
       <article>
-        <h2>Forms</h2>
-
-        <form action="/" method="post">
-          <fieldset>
-            <legend>Message:</legend>
-            <input type="text" name="name" placeholder="Enter your name" />
-            <textarea
-              name="message"
-              placeholder="Enter your message"
-            ></textarea>
-            <button>Send</button>
-          </fieldset>
-        </form>
+        <grids>
+          <div>
+            <h2>Forms</h2>
+            <form>
+              <fieldset>
+                <legend>Message:</legend>
+                <input type="text" name="name" placeholder="Enter your name" />
+                <textarea
+                  name="message"
+                  placeholder="Enter your message"
+                ></textarea>
+                <button>Send</button>
+              </fieldset>
+            </form>
+          </div>
+          <div>
+            <xmp>
+  <form>
+    <fieldset>
+      <legend>Message:</legend>
+      <input type="text" name="name" placeholder="Enter your name" />
+      <textarea
+        name="message"
+        placeholder="Enter your message"
+      ></textarea>
+      <button>Send</button>
+    </fieldset>
+  </form>
+            </xmp>
+          </div>
+        </grids>
       </article>
     </section>
     <section>
