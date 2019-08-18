@@ -1,9 +1,32 @@
 # antalya.css v0.2.0
-1kb css micro framework
 
+> 1kb micro css framework for bootstrapping
+
+Antalya.css built for only and only prototyping purposes.
+
+## Goals, Rules, Gameplay or Whatever you call
+
+- No id, no class
+- Pure CSS, no JS included.
+- Keep file under 1kb gzipped
+- Use css variables to customize
 
 ## Installation
 
-bower install antalya
+#### Bower
 
+```sh
+bower install antalya
+```
+
+#### Yarn
+
+```sh
+yarn add antalya.css
+```
+
+#### Npm
+
+```sh
 npm install antalya.css
+```

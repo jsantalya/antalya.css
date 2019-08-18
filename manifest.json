@@ -6,7 +6,7 @@
   "background_color": "#2c69d8",
   "theme_color": "#2c69d8",
   "start_url": "/",
-  "description": "1kb css micro framework",
+  "description": "1kb micro css framework for bootstrapping",
   "icons": [{
     "src": "https://aso.dog/icon-192x192.png",
     "sizes": "192x192",
