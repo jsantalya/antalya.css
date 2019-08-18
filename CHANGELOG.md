@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.4.2
+
+- added grid gap for grid system
+- added form example to the home page
+
+### 0.4.1
+
+- added menu background colors when contrasting
+
 ### 0.4.0
 
 - added sections
