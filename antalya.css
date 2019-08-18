@@ -1,7 +1,20 @@
+:root {
+  --primary-background-color: #357df9;
+  --primary-text-color: #fefefe;
+  --secondary-background-color: #f9fafb;
+  --secondary-text-color: #606c76;
+  --wrapper-max-width: 1111px;
+}
+
 *,
 *:after,
 *:before {
   box-sizing: inherit;
+  margin: 0;
+}
+
+html {
+  line-height: 1.5365;
 }
 
 body {
@@ -9,6 +22,10 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
 }
 
 h1,
@@ -44,7 +61,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Grid */
+/* Wrappers */
+
+article {
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto;
+}
+
+/* Grids */
 
 slice {
   display: grid;
@@ -55,8 +79,25 @@ slice {
 @media (min-width: 768px) {
   grids {
     display: grid;
-    grid-template-columns: var(--columns);
+    grid-template-columns: var(--cols, repeat(auto-fit, minmax(19rem, 1fr)));
   }
+}
+
+/* Sections */
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section:nth-child(2n + 1) {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+section:nth-child(2n + 2) {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
 }
 
 /* Hamburger Menu */
@@ -65,8 +106,8 @@ details {
   max-width: 12rem;
   position: relative;
   position: fixed;
-  top: 0.67rem;
-  right: 0.67rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 summary {
@@ -125,4 +166,120 @@ details ul {
 details ul li {
   font-size: 2rem;
   margin: 1rem;
+}
+
+/* Forms */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* button {
+  width: 100%;
+  height: 89px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 6px;
+} */
+
+input,
+select,
+textarea {
+  border: none;
+  border-radius: 0.3rem;
+  color: #606c76;
+  padding: 1rem 1.5rem;
+  outline: none;
+  background-color: #f8f8fc;
+  margin: 0.5rem 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  appearance: none;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: none;
+  box-sizing: border-box;
+  height: 3.8rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border: 1px dotted;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+label,
+legend {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+.label-inline {
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+button {
+  background-color: #86addb;
+  border: 0.1rem solid #86addb;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 4.4rem;
+  letter-spacing: 0;
+  line-height: 4.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  padding: 0 4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+datalist {
+  background: #333;
 }
