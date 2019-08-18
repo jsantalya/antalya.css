@@ -132,12 +132,15 @@ summary::after {
   position: relative;
   left: 0.25rem;
   font-size: 2rem;
+  color: var(--secondary-background-color)
 }
 
 details[open] summary::after {
   content: "×";
   font-size: 2em;
   z-index: 22222;
+  left: 0.25rem;
+  color: var(--primary-background-color)
 }
 
 details[open] summary::before {
@@ -158,7 +161,8 @@ details ul {
   bottom: 0;
   left: 0;
   list-style: none;
-  background-color: #f7f8fc;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
   text-align: center;
   padding: 0;
   margin: 0;
