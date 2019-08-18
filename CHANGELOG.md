@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.4.0
+
+- added sections
+- added forms styles
+- upgraded the grid system
+- added section wrappers
+
 ### 0.3.0
 
 - added micro grid system
