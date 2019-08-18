@@ -1,12 +1,12 @@
 {
   "name": "Antalya.css",
   "short_name": "Antalya.css",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "display": "standalone",
   "background_color": "#2c69d8",
   "theme_color": "#2c69d8",
   "start_url": "/",
-  "description": "1kb css micro framework",
+  "description": "1kb micro css framework for bootstrapping",
   "icons": [{
     "src": "https://aso.dog/icon-192x192.png",
     "sizes": "192x192",
