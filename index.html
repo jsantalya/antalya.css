@@ -24,6 +24,7 @@
     <link href="./antalya.css" rel="stylesheet" />
     <style>
       xmp {
+        display: block;
         width: 100%;
         white-space: pre-wrap;
         word-wrap: break-word;
@@ -37,35 +38,61 @@
       <article>
         <header>
           <h1>Antalya.css v0.4.2</h1>
-          <h2>
-            1kb micro css framework for bootstrapping.
-          </h2>
-          <details>
-            <summary>Menu</summary>
-            <ul>
-              <li><a href="#">Thing 1</a></li>
-              <li><a href="#">Thing 2</a></li>
-              <li><a href="#">Thing 3</a></li>
-            </ul>
-          </details>
+
+          <menu type="hamburger">
+            <details>
+              <summary>Menu</summary>
+              <ul>
+                <li><a href="#">Thing 1</a></li>
+                <li><a href="#">Thing 2</a></li>
+                <li><a href="#">Thing 3</a></li>
+              </ul>
+            </details>
+          </menu>
         </header>
 
-        <grids style="--columns: 10fr 2fr">
-          <div>
-            <h3>Slice</h3>
-            <slice>
-              <p>Lorem ipsum sit dolor amet</p>
-              <p>Lorem ipsum sit dolor amet</p>
-              <p>Lorem ipsum sit dolor amet</p>
-              <p>Lorem ipsum sit dolor amet</p>
-              <p>Lorem ipsum sit dolor amet</p>
-            </slice>
-          </div>
+        <grids style="--columns: 5fr 2fr">
+          <legend>
+            <h1>
+              1kb micro css framework for bootstrapping.
+            </h1>
+          </legend>
+          <summary>
+            <h1>lorem ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+              possimus dolor eaque fugit provident quod ratione quia? Molestias
+              incidunt ad, quod laboriosam, ipsa inventore sequi aliquid
+              possimus nemo sunt consequuntur?
+            </p>
+            <button type="button">Action</button>
+          </summary>
+        </grids>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <grids style="--columns: 5fr 5fr">
           <div>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
             sapiente. Optio, nisi maxime. Quidem reprehenderit impedit
             voluptatem, qui quod aliquam hic? Omnis quas eum ut rerum. Porro
             eveniet enim reprehenderit?
+          </div>
+          <div>
+            <grids style="--columns: 1fr 1fr">
+              <summary>
+                <h1>lorem ipsum</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quasi possimus dolor eaque fugit provident quod ratione quia?
+                  Molestias incidunt ad, quod laboriosam, ipsa inventore sequi
+                  aliquid possimus nemo sunt consequuntur?
+                </p>
+                <button type="button">Action</button>
+              </summary>
+            </grids>
           </div>
         </grids>
       </article>
@@ -108,12 +135,25 @@
     </section>
     <section>
       <article>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-          inventore alias suscipit eligendi! Velit pariatur sit magnam qui,
-          quidem saepe ipsa maiores quas officiis officia repellendus animi
-          veniam molestias praesentium.
-        </p>
+        <h1>AutoComplete</h1>
+        <grids>
+          <fieldset>
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input
+              list="ice-cream-flavors"
+              id="ice-cream-choice"
+              name="ice-cream-choice"
+              autocomplete="Start to type"
+            />
+            <datalist id="ice-cream-flavors">
+              <option value="Chocolate"> </option>
+              <option value="Coconut"> </option>
+              <option value="Mint"> </option>
+              <option value="Strawberry"> </option>
+              <option value="Vanilla"> </option>
+            </datalist>
+          </fieldset>
+        </grids>
       </article>
     </section>
     <section>

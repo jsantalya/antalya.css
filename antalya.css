@@ -1,17 +1,19 @@
 :root {
   --primary-background-color: #357df9;
   --primary-text-color: #fefefe;
+  --light-color: #fefefe;
   --secondary-background-color: #f9fafb;
   --secondary-text-color: #606c76;
   --wrapper-max-width: 1111px;
   --border-radius: 6px;
   --grid-gap: 1rem;
+  --padding-content: 1rem;
 }
 
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -72,13 +74,6 @@ article {
 
 /* Grids */
 
-slice {
-  display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  grid-gap: var(--grid-gap);
-}
-
 @media (min-width: 768px) {
   grids {
     display: grid;
@@ -93,20 +88,20 @@ section {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: var(--padding-content, 1rem);
 }
-section:nth-child(2n + 1) {
+/* section:nth-child(2n + 1) {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 }
 section:nth-child(2n + 2) {
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
-}
+} */
 
 /* Hamburger Menu */
 
-details {
+menu[type="hamburger"] details {
   max-width: 12rem;
   position: relative;
   position: fixed;
@@ -114,22 +109,22 @@ details {
   right: 1rem;
 }
 
-summary {
+menu[type="hamburger"] summary {
   visibility: hidden;
   list-style: none;
   cursor: pointer;
 }
 
-summary::-webkit-details-marker {
+menu[type="hamburger"] summary::-webkit-details-marker {
   display: none;
 }
 
-summary::before {
+menu[type="hamburger"] summary::before {
   visibility: visible;
   content: "";
 }
 
-summary::after {
+menu[type="hamburger"] summary::after {
   visibility: visible;
   content: "☰";
   z-index: 11111;
@@ -137,10 +132,10 @@ summary::after {
   left: 0.25rem;
   font-size: 2rem;
   color: var(--secondary-background-color);
-  text-shadow: 0px 0px 3px var(--primary-background-color);
+  text-shadow: 0px 0px 3px #8e8d8d;
 }
 
-details[open] summary::after {
+menu[type="hamburger"] details[open] summary::after {
   content: "×";
   font-size: 2em;
   z-index: 22222;
@@ -148,7 +143,7 @@ details[open] summary::after {
   color: var(--primary-background-color);
 }
 
-details[open] summary::before {
+menu[type="hamburger"] details[open] summary::before {
   content: "";
   position: fixed;
   top: 0;
@@ -157,7 +152,7 @@ details[open] summary::before {
   left: 0;
 }
 
-details ul {
+menu[type="hamburger"] details ul {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -172,7 +167,7 @@ details ul {
   padding: 0;
   margin: 0;
 }
-details ul li {
+menu[type="hamburger"] details ul li {
   font-size: 2rem;
   margin: 1rem;
 }
@@ -195,6 +190,7 @@ textarea {
   outline: none;
   background-color: #f8f8fc;
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 input[type="email"],
@@ -275,7 +271,7 @@ input[type="radio"] {
 
 button {
   background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
+  color: var(--light-color);
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 400;
@@ -295,4 +291,28 @@ button {
 
 datalist {
   background: #333;
+}
+
+/* Content Items */
+
+legend {
+  min-height: 100%;
+  padding-top: 20vh;
+}
+legend h1 {
+  font-size: 3rem;
+}
+
+summary {
+  background: var(--secondary-background-color);
+  border-radius: var(--border-radius);
+  color: var(--secondary-text-color);
+  padding: 1rem 1.2rem;
+  min-height: 80vh;
+  box-shadow: 0px 0px 20px #d0d0d0;
+}
+summary input {
+  background: var(--primary-background-color);
+  color: var(--light-color);
+  width: 100%;
 }
