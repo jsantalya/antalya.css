@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.4.3
+
+- update section styles
+- update homepage content
+
 ### 0.4.2
 
 - added grid gap for grid system

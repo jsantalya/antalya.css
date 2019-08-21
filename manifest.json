@@ -1,7 +1,7 @@
 {
   "name": "Antalya.css",
   "short_name": "Antalya.css",
-  "version": "v0.4.2",
+  "version": "v0.4.3",
   "display": "standalone",
   "background_color": "#2c69d8",
   "theme_color": "#2c69d8",
@@ -10,7 +10,7 @@
   "icons": [],
   "developer": {
     "name": "Mehmet KOSE",
-    "url": "https://mehmetkose.github.io"
+    "url": "https://purl.org/mehmetkose"
   },
   "default_locale": "en"
 }
