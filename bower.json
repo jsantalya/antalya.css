@@ -6,7 +6,7 @@
     "Mehmet Kose mehmetkosedev@gmail.com"
   ],
   "description": "1kb micro css framework",
-  "main": "antalya.css",
+  "main": "dist/antalya.css",
   "keywords": [
     "ui",
     "framework",

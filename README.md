@@ -30,3 +30,24 @@ yarn add antalya.css
 ```sh
 npm install antalya.css
 ```
+
+## Development
+
+#### Watch
+
+```sh
+npm run watch
+```
+
+#### Build
+
+```sh
+npm run build
+```
+
+#### File Size
+
+```sh
+npm run size
+```
+
