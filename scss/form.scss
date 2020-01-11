@@ -1,4 +1,3 @@
-
 /* Forms */
 button,
 input,
@@ -18,6 +17,7 @@ textarea {
   background-color: #f8f8fc;
   margin: 0.5rem 0;
   font-size: 1rem;
+  box-shadow: 0 2rem 2.5rem -0.9375rem rgba(30, 49, 71, 0.2);
 }
 
 input[type="email"],
@@ -113,6 +113,9 @@ button {
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+}
+button:focus {
+  outline: 0 !important;
 }
 
 datalist {

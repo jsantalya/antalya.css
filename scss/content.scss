@@ -1,54 +1,40 @@
-
 /* Wrappers */
 
 article {
-    max-width: var(--wrapper-max-width);
-    margin: 0 auto;
-  }
-  
-  /* Grids */
-  
-  @media (min-width: 768px) {
-    grids {
-      display: grid;
-      grid-template-columns: var(--cols, repeat(auto-fit, minmax(19rem, 1fr)));
-      grid-gap: var(--grid-gap);
-    }
-  }
-  
-  /* Sections */
-  
-  section {
-    min-height: 100vh;
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto;
+}
+
+/* Sections */
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: var(--padding-content, 1rem);
+}
+
+/* Content Items */
+
+legend {
+  min-height: 100%;
+  padding-top: 20vh;
+}
+legend h1 {
+  font-size: 3rem;
+}
+
+summary {
+  background: var(--secondary-background-color);
+  border-radius: var(--border-radius);
+  color: var(--secondary-text-color);
+  padding: 1rem 1.2rem;
+  min-height: 80vh;
+  box-shadow: 0px 0px 20px #d0d0d0;
+
+  input {
+    background: var(--primary-background-color);
+    color: var(--light-color);
     width: 100%;
-    margin: 0;
-    padding: var(--padding-content, 1rem);
   }
-  
-  
-  
-  /* Content Items */
-  
-  legend {
-    min-height: 100%;
-    padding-top: 20vh;
-  }
-  legend h1 {
-    font-size: 3rem;
-  }
-  
-  summary {
-    background: var(--secondary-background-color);
-    border-radius: var(--border-radius);
-    color: var(--secondary-text-color);
-    padding: 1rem 1.2rem;
-    min-height: 80vh;
-    box-shadow: 0px 0px 20px #d0d0d0;
-  
-    input {
-      background: var(--primary-background-color);
-      color: var(--light-color);
-      width: 100%;
-    }
-  }
-  
+}
