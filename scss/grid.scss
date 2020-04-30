@@ -1,6 +1,6 @@
 /* Grids */
 
-grids {
+dl {
   display: grid;
   grid-template-columns: var(--cols, repeat(auto-fit, minmax(19rem, 1fr)));
   grid-gap: var(--grid-gap);
