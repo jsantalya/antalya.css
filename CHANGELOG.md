@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.5.0
+
+- removed custom 'grids' tag and started to using <dl>
+
 ### 0.4.3
 
 - update section styles
